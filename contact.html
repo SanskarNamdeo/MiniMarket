@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: rgba(1, 1, 1, 0.418) url(img.jpg);
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .navbar {
+            display: flex; 
+            align-items: center;
+            padding: 10px 20px;
+            margin-bottom: 64px;
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+        }
+
+        .logo h6 {
+            /* width: 170px;
+            height: 150px; */
+            font-size: 20px;
+            font-weight: 200;
+            font-family: 'Poppins', sans-serif;
+            display: inline-block;
+
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo {
+            flex: 1;
+            text-align: left;
+        }
+
+        .logo a {
+            text-decoration: none;
+            display: inline-block;
+            color: #4b4b4b;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4b4b4b;
+        }
+
+        .navbar {
+            /* background-color: #9e9a9a; */
+        }
+
+        .contact .title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            margin-top: 142px;
+        }
+
+        svg {
+            color: #efe7e7;
+        }
+
+        .content .title {
+            font-size: 30px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        /* .title span::before,
+        .title span::after {
+            content: '';
+            position: absolute;
+            left: 43%;
+            bottom: -13%;
+            height: 4px;
+            width: 14%;
+            background: #9e9a9a;
+        }
+
+        .title span::after {
+            width: 6%;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -14px;
+        } */
+
+        .contact .content .text {
+            justify-content: justify;
+            /* box-shadow: 0 10px 10px rgb(155, 155, 155); */
+            border-radius: 4px;
+            padding: 20px 30px;
+            margin: 50px;
+            color: #bebebe;
+            font-size: 15px;
+            font-weight: 100;
+        }
+
+        .box .topic {
+            font-size: 20px;
+            font: 500;
+        }
+
+        .box {
+            margin: 70px 0;
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+
+        .box .icon {
+            flex-basis: 30%;
+            min-width: 250px;
+            margin-bottom: 35px;
+        }
+
+        .icon {
+            width: calc(100% / 2 - 70%);
+        }
+
+        .box {
+            flex-basis: 50%;
+            min-width: 300px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .menu-icon {
+            width: 28px;
+            margin-left: 20px;
+            display: none;
+        }
+
+        @media only screen and (max-width: 863px) {
+            nav ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                overflow: hidden;
+                background-color: #333;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                transition: all 0.5s ease;
+            }
+
+            nav ul li {
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 50px;
+            }
+
+            nav ul li a {
+                color: #fff;
+            }
+
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="Hello.html"><img src="https://mattilde.lv/wp-content/uploads/2020/04/logo.png" alt="MiniStore">
+                <h6>MINIMARKET</h6>
+            </a>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="Shopping.html">Home</a></li>
+                <li><a href="#products">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor"
+                class="bi bi-cart3" viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg></a>
+        <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+    </div>
+
+
+
+    <div class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Contact Me</span></div>
+            <div class="text">
+                <div class="box">
+                    <div class="topic">Contact Here</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus ipsum eaque mollitia
+                        veniam delectus?</p>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt" viewBox="0 0 16 16" color="Grey">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                        <p>Registered Office Address:</p>
+                        <p>Buildings Alyssa, Begonia &
+
+                            Clove Embassy Tech Village,
+
+                            Outer Ring Road, Devarabeesanahalli Village,
+
+                            Bengaluru, 560103,
+
+                            Karnataka, India
+
+                            CIN : U51109KA2012PTC066107</p>
+
+                    </div>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 16 16" color="Grey">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                        <p>Mail Us:</p>
+                        <p>Buildings Alyssa, Begonia &
+
+                            Clove Embassy Tech Village,
+
+                            Outer Ring Road, Devarabeesanahalli Village,
+
+                            Bengaluru, 560103,
+
+                            Karnataka, India
+                            minimarket124@gmail.com</p>
+
+                    </div>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-phone" viewBox="0 0 16 16" color="grey">
+                            <path
+                                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>
+                        <p>Call Us:</p>
+                        <p>8889343696, 9522059335</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
